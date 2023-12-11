@@ -45,7 +45,7 @@ export const loginResource = '/Login';
 
 
 //API Azure 
-const externaApi = `https://webapifernando.azure-api.net/api` 
+const externaApi = `https://eventapiwebfernando.azurewebsites.net/api` 
 
 
 
