@@ -53,7 +53,7 @@ const externallApiUri = ``;
 // const externalApiUri = null;
 
 const api = axios.create({
-    baseURL: localApiUri
+    baseURL : externaApi
 });
 
 
