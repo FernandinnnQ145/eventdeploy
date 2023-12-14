@@ -11,6 +11,7 @@ import Container from "../../components/Container/Container";
 import api from "../../Services/Service";
 import Notification from "../../components/Notification/Notification";
 import { nextEventResource } from "../../Services/Service";
+import { Link } from "react-router-dom";
 
 
 const HomePage = () => {
@@ -43,7 +44,7 @@ const HomePage = () => {
   }, []);
 
   return (
-    
+
     <MainContent>
       {<Notification {...notifyUser} setNotifyUser={setNotifyUser} />}
       <Banner />
@@ -56,13 +57,16 @@ const HomePage = () => {
           <div className="events-box">
             {nextEvents.map((e) => {
               return (
-                <NextEvent
-                  key={e.idEvento}
-                  title={e.nomeEvento}
-                  description={e.descricao}
-                  eventDate={e.dataEvento}
-                  idEvent={e.idEvento}
-                />
+                
+                  <NextEvent
+                    key={e.idEvento}
+                    title={e.nomeEvento}
+                    description={e.descricao}
+                    eventDate={e.dataEvento}
+                    idEvent={e.idEvento}
+                  />
+               
+
               );
             })}
           </div>
