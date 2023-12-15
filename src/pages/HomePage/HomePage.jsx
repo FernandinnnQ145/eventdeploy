@@ -52,7 +52,7 @@ const HomePage = () => {
       {/* PRÓXIMOS EVENTOS */}
       <section className="proximos-eventos">
         <Container>
-          {/* <Title titleText={"Próximos Eventos"} /> */}
+          <Title titleText={"Próximos Eventos"} />
 
           <div className="events-box">
             {nextEvents.map((e) => {
@@ -63,7 +63,7 @@ const HomePage = () => {
                     title={e.nomeEvento}
                     description={e.descricao}
                     eventDate={e.dataEvento}
-                    idEvent={e.idEvento}
+                    idEvento={e.idEvento}
                   />
                
 
